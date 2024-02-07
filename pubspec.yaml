@@ -1,0 +1,31 @@
+name: Atomic_Habits
+description: "A new Flutter project."
+publish_to: 'Mohamed Rami'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.1.0
+  shared_preferences: ^2.2.2
+  syncfusion_flutter_pdfviewer: ^24.1.41
+  url_launcher: ^6.2.4
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/book/
+    - assets/fonts/
+  fonts:
+    - family: Gilroy-Medium
+      fonts:
+        - asset: assets/fonts/Gilroy-Medium.ttf
