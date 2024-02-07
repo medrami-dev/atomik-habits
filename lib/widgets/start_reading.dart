@@ -15,7 +15,7 @@ class StartReadingButton extends StatelessWidget {
       child: Container(
           alignment: Alignment.center,
           height: deviceHeight * 0.08,
-          width: deviceWidth * 0.7,
+          width: deviceWidth * 0.4,
           decoration: BoxDecoration(
               color: const Color.fromARGB(255, 199, 169, 49),
               borderRadius: BorderRadius.circular(20)),
