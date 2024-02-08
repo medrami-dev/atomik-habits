@@ -1,8 +1,53 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import '../crt/ads_manager.dart';
 
-class StartReadingButton extends StatelessWidget {
+class StartReadingButton extends StatefulWidget {
   const StartReadingButton({super.key});
+
+  @override
+  State<StartReadingButton> createState() => _StartReadingButtonState();
+}
+
+class _StartReadingButtonState extends State<StartReadingButton> {
+  InterstitialAd? interstitialAd;
+
+  void createInterstitialAd() {
+    InterstitialAd.load(
+      adUnitId: AdManager.interstitialAdId,
+      request: const AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (InterstitialAd ad) {
+          ad.show();
+        },
+        onAdFailedToLoad: (LoadAdError error) => interstitialAd = null,
+      ),
+    );
+  }
+
+  void showInterstitialAd() {
+    if (interstitialAd != null) {
+      interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
+        onAdDismissedFullScreenContent: (InterstitialAd ad) {
+          ad.dispose();
+          createInterstitialAd();
+        },
+        onAdFailedToShowFullScreenContent: (InterstitialAd ad, AdError error) {
+          ad.dispose();
+          createInterstitialAd();
+        },
+      );
+      interstitialAd!.show();
+      interstitialAd = null;
+    }
+  }
+
+  @override
+  initState() {
+    super.initState();
+    createInterstitialAd();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +55,13 @@ class StartReadingButton extends StatelessWidget {
     double deviceWidth = MediaQuery.of(context).size.width;
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, '/readingPage');
+        if (interstitialAd != null) {
+          showInterstitialAd();
+          Navigator.pushNamed(context, "/readingPage");
+        } else {
+          createInterstitialAd();
+          Navigator.pushNamed(context, "/readingPage");
+        }
       },
       child: Container(
           alignment: Alignment.center,

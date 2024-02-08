@@ -32,8 +32,7 @@ class _ReadingPageState extends State<ReadingPage> {
           ad.dispose();
         },
       ),
-    );
-    _bannerAd!.load();
+    )..load();
   }
 
   //* Create a PdfViewerController

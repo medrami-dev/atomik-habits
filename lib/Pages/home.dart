@@ -1,17 +1,25 @@
 // ignore_for_file: unused_element
 
+import 'package:Atomic_Habits/crt/ads_manager.dart';
 import 'package:Atomic_Habits/widgets/image_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '../widgets/book_desc.dart';
 import '../widgets/start_reading.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({super.key});
 
   @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
   Widget build(BuildContext context) {
+    InterstitialAd? interstitialAd;
     double deviceHeight = MediaQuery.of(context).size.height;
     double deviceWidth = MediaQuery.of(context).size.width;
     // The url to launch
@@ -24,6 +32,8 @@ class Home extends StatelessWidget {
         throw Exception('Could not launch $url');
       }
     }
+    
+  
 
     return Scaffold(
       // The app bar

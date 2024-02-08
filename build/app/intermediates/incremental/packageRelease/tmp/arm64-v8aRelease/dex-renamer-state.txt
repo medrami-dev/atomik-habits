@@ -1,0 +1,4 @@
+#Thu Feb 08 04:02:49 WAT 2024
+base.0=C\:\\Users\\Mohamed\\Documents\\Flutter Projects\\android_app\\atomic_abits_book\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

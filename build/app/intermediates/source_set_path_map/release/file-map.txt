@@ -1,0 +1,41 @@
+com.example.atomic_abits_book.app-jetified-window-1.0.0-beta04-0 C:\Users\Mohamed\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\res
+com.example.atomic_abits_book.app-jetified-play-services-basement-18.2.0-1 C:\Users\Mohamed\.gradle\caches\transforms-3\168f69656657bc55ed47a380e965316c\transformed\jetified-play-services-basement-18.2.0\res
+com.example.atomic_abits_book.app-jetified-play-services-ads-22.5.0-2 C:\Users\Mohamed\.gradle\caches\transforms-3\2874ec418e072dd6d288787df6a4f9a0\transformed\jetified-play-services-ads-22.5.0\res
+com.example.atomic_abits_book.app-jetified-ads-adservices-1.0.0-beta05-3 C:\Users\Mohamed\.gradle\caches\transforms-3\29b2afadb5d762db459808f64547fddf\transformed\jetified-ads-adservices-1.0.0-beta05\res
+com.example.atomic_abits_book.app-constraintlayout-2.1.4-4 C:\Users\Mohamed\.gradle\caches\transforms-3\36f3b2add7e3f885bfe64634265f0a8c\transformed\constraintlayout-2.1.4\res
+com.example.atomic_abits_book.app-webkit-1.7.0-5 C:\Users\Mohamed\.gradle\caches\transforms-3\42e5ec024b36c9bb75771580f651e3dd\transformed\webkit-1.7.0\res
+com.example.atomic_abits_book.app-jetified-core-ktx-1.10.1-6 C:\Users\Mohamed\.gradle\caches\transforms-3\47085114ff49c80095b55db1e8d4ce63\transformed\jetified-core-ktx-1.10.1\res
+com.example.atomic_abits_book.app-lifecycle-runtime-2.6.2-7 C:\Users\Mohamed\.gradle\caches\transforms-3\4e8ce05744abebce0241028926fbde36\transformed\lifecycle-runtime-2.6.2\res
+com.example.atomic_abits_book.app-jetified-startup-runtime-1.1.1-8 C:\Users\Mohamed\.gradle\caches\transforms-3\4fe6fe3fdff42ccd1f593df325030e89\transformed\jetified-startup-runtime-1.1.1\res
+com.example.atomic_abits_book.app-appcompat-1.2.0-9 C:\Users\Mohamed\.gradle\caches\transforms-3\54d742fd25d8045523bbd52b9ef66eff\transformed\appcompat-1.2.0\res
+com.example.atomic_abits_book.app-jetified-annotation-experimental-1.3.0-10 C:\Users\Mohamed\.gradle\caches\transforms-3\761929e091d544d9e6394773eda8bdee\transformed\jetified-annotation-experimental-1.3.0\res
+com.example.atomic_abits_book.app-jetified-appcompat-resources-1.2.0-11 C:\Users\Mohamed\.gradle\caches\transforms-3\7ae2b397e827400e3552e591d7f51d26\transformed\jetified-appcompat-resources-1.2.0\res
+com.example.atomic_abits_book.app-jetified-lifecycle-process-2.6.2-12 C:\Users\Mohamed\.gradle\caches\transforms-3\7df56744dddb4ca569afd4a7b34b2889\transformed\jetified-lifecycle-process-2.6.2\res
+com.example.atomic_abits_book.app-core-1.10.1-13 C:\Users\Mohamed\.gradle\caches\transforms-3\889ce5bd12f1117e5357d5fcdb5e1305\transformed\core-1.10.1\res
+com.example.atomic_abits_book.app-lifecycle-viewmodel-2.6.2-14 C:\Users\Mohamed\.gradle\caches\transforms-3\93796587f9b5d0922484bc6f1b94ead8\transformed\lifecycle-viewmodel-2.6.2\res
+com.example.atomic_abits_book.app-core-runtime-2.2.0-15 C:\Users\Mohamed\.gradle\caches\transforms-3\940b9309689e502e1c69a5135892cdcc\transformed\core-runtime-2.2.0\res
+com.example.atomic_abits_book.app-jetified-window-java-1.0.0-beta04-16 C:\Users\Mohamed\.gradle\caches\transforms-3\99750bb863b6fe460a7b5da8686e778d\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.atomic_abits_book.app-jetified-play-services-base-18.0.0-17 C:\Users\Mohamed\.gradle\caches\transforms-3\9a242f35bb5f8bcbce9f72526dd9372a\transformed\jetified-play-services-base-18.0.0\res
+com.example.atomic_abits_book.app-lifecycle-livedata-2.6.2-18 C:\Users\Mohamed\.gradle\caches\transforms-3\ac1a890edf09d5b230334f6a545936d7\transformed\lifecycle-livedata-2.6.2\res
+com.example.atomic_abits_book.app-jetified-play-services-ads-lite-22.5.0-19 C:\Users\Mohamed\.gradle\caches\transforms-3\b7f1ae6a5580fe1cd2858d35a8e9cbe1\transformed\jetified-play-services-ads-lite-22.5.0\res
+com.example.atomic_abits_book.app-jetified-profileinstaller-1.3.0-20 C:\Users\Mohamed\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\res
+com.example.atomic_abits_book.app-jetified-lifecycle-service-2.6.2-21 C:\Users\Mohamed\.gradle\caches\transforms-3\be002909061936dc53b851782856c04e\transformed\jetified-lifecycle-service-2.6.2\res
+com.example.atomic_abits_book.app-jetified-ads-adservices-java-1.0.0-beta05-22 C:\Users\Mohamed\.gradle\caches\transforms-3\cc7e44b07b6bbfbe887ac5860ad471aa\transformed\jetified-ads-adservices-java-1.0.0-beta05\res
+com.example.atomic_abits_book.app-work-runtime-2.7.0-23 C:\Users\Mohamed\.gradle\caches\transforms-3\d032224f4cfb6a6e1071a77e712f1d3b\transformed\work-runtime-2.7.0\res
+com.example.atomic_abits_book.app-browser-1.5.0-24 C:\Users\Mohamed\.gradle\caches\transforms-3\d9d38ec9344928c1b01c151ec647a95a\transformed\browser-1.5.0\res
+com.example.atomic_abits_book.app-lifecycle-livedata-core-2.6.2-25 C:\Users\Mohamed\.gradle\caches\transforms-3\effdec20b4b72a00ea6af29220de8f58\transformed\lifecycle-livedata-core-2.6.2\res
+com.example.atomic_abits_book.app-main-26 C:\Users\Mohamed\Documents\Flutter Projects\android_app\atomic_abits_book\android\app\src\main\res
+com.example.atomic_abits_book.app-release-27 C:\Users\Mohamed\Documents\Flutter Projects\android_app\atomic_abits_book\android\app\src\release\res
+com.example.atomic_abits_book.app-pngs-28 C:\Users\Mohamed\Documents\Flutter Projects\android_app\atomic_abits_book\build\app\generated\res\pngs\release
+com.example.atomic_abits_book.app-resValues-29 C:\Users\Mohamed\Documents\Flutter Projects\android_app\atomic_abits_book\build\app\generated\res\resValues\release
+com.example.atomic_abits_book.app-rs-30 C:\Users\Mohamed\Documents\Flutter Projects\android_app\atomic_abits_book\build\app\generated\res\rs\release
+com.example.atomic_abits_book.app-mergeReleaseResources-31 C:\Users\Mohamed\Documents\Flutter Projects\android_app\atomic_abits_book\build\app\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.example.atomic_abits_book.app-mergeReleaseResources-32 C:\Users\Mohamed\Documents\Flutter Projects\android_app\atomic_abits_book\build\app\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.example.atomic_abits_book.app-merged_res-33 C:\Users\Mohamed\Documents\Flutter Projects\android_app\atomic_abits_book\build\app\intermediates\merged_res\release
+com.example.atomic_abits_book.app-packaged_res-34 C:\Users\Mohamed\Documents\Flutter Projects\android_app\atomic_abits_book\build\device_info_plus\intermediates\packaged_res\release
+com.example.atomic_abits_book.app-packaged_res-35 C:\Users\Mohamed\Documents\Flutter Projects\android_app\atomic_abits_book\build\google_mobile_ads\intermediates\packaged_res\release
+com.example.atomic_abits_book.app-packaged_res-36 C:\Users\Mohamed\Documents\Flutter Projects\android_app\atomic_abits_book\build\path_provider_android\intermediates\packaged_res\release
+com.example.atomic_abits_book.app-packaged_res-37 C:\Users\Mohamed\Documents\Flutter Projects\android_app\atomic_abits_book\build\shared_preferences_android\intermediates\packaged_res\release
+com.example.atomic_abits_book.app-packaged_res-38 C:\Users\Mohamed\Documents\Flutter Projects\android_app\atomic_abits_book\build\syncfusion_flutter_pdfviewer\intermediates\packaged_res\release
+com.example.atomic_abits_book.app-packaged_res-39 C:\Users\Mohamed\Documents\Flutter Projects\android_app\atomic_abits_book\build\url_launcher_android\intermediates\packaged_res\release
+com.example.atomic_abits_book.app-packaged_res-40 C:\Users\Mohamed\Documents\Flutter Projects\android_app\atomic_abits_book\build\webview_flutter_android\intermediates\packaged_res\release
