@@ -10,7 +10,7 @@ class StartReadingButton extends StatelessWidget {
     double deviceWidth = MediaQuery.of(context).size.width;
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, "/readingPage");
+        Navigator.pushNamed(context, '/readingPage');
       },
       child: Container(
           alignment: Alignment.center,
@@ -26,7 +26,7 @@ class StartReadingButton extends StatelessWidget {
               Text(
                 "ابدأ القراءة",
                 style: GoogleFonts.tajawal(
-                  fontSize: 17.5,
+                  fontSize: 16,
                   color: Colors.white,
                   fontWeight: FontWeight.w600,
                 ),

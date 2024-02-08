@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^6.1.0
+  google_mobile_ads: ^4.0.0
   shared_preferences: ^2.2.2
   syncfusion_flutter_pdfviewer: ^24.1.41
   url_launcher: ^6.2.4
