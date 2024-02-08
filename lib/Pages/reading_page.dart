@@ -1,5 +1,6 @@
 import 'package:Atomic_Habits/crt/continue_reading.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
@@ -52,6 +53,7 @@ class _ReadingPageState extends State<ReadingPage> {
   void dispose() {
     // Save the current page when the widget is disposed
     continueReading.saveCurrentPage(_pdfViewerController.pageNumber);
+    _bannerAd?.dispose();
     super.dispose();
   }
 
@@ -61,6 +63,7 @@ class _ReadingPageState extends State<ReadingPage> {
     double deviceWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SizedBox(
             height: deviceHeight * 0.9,
@@ -77,14 +80,18 @@ class _ReadingPageState extends State<ReadingPage> {
           ),
           Container(
             alignment: Alignment.center,
-            height: deviceHeight - AdSize.banner.height.toDouble(),
-            width: deviceWidth - AdSize.banner.width.toDouble(),
-            decoration: BoxDecoration(
-              border: Border.all(color: Colors.black, width: 1),
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.white,
-            ),
-            child: isLoaded ? AdWidget(ad: _bannerAd!) : const SizedBox(),
+            height: AdSize.banner.height.toDouble(),
+            width: AdSize.banner.width.toDouble(),
+            child: isLoaded
+                ? AdWidget(ad: _bannerAd!)
+                : Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "  لا يوجد اعلان متوفر ",
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.tajawal(),
+                    ),
+                  ),
           )
         ],
       ),
