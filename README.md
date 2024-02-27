@@ -1,3 +1,3 @@
 # atomic_abits_book
 
-A new Flutter project.
+An easy To use App To read The 'Atomic Abits Book'
