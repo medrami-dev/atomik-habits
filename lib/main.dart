@@ -1,3 +1,5 @@
+import 'package:Atomic_Habits/Pages/about_app.dart';
+import 'package:Atomic_Habits/Pages/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'Pages/home.dart';
@@ -23,8 +25,11 @@ class _MainAppState extends State<MainApp> {
         debugShowCheckedModeBanner: false,
         title: 'Atomic Habits',
         routes: {
-          "/": (context) => const Home(),
+          "/": (context) => const SplashScreen(),
+          "/home": (context) => const Home(),
           "/readingPage": (context) => const ReadingPage(),
+          "/aboutApp": (context) => const AboutApp(),
+          // "/aboutDeveloper": (context) => const AboutDeveloper(),
         },
         theme: ThemeData(
             useMaterial3: true,

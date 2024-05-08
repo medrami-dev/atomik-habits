@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   google_mobile_ads: ^4.0.0
+  lottie: ^3.1.0
   shared_preferences: ^2.2.2
   syncfusion_flutter_pdfviewer: ^24.1.41
   url_launcher: ^6.2.4
