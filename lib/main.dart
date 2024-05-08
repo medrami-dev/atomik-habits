@@ -20,15 +20,16 @@ class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Atomic Habits',
-      routes: {
-        "/": (context) => const Home(),
-        "/readingPage": (context) => const ReadingPage(),
-      },
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Atomic Habits',
+        routes: {
+          "/": (context) => const Home(),
+          "/readingPage": (context) => const ReadingPage(),
+        },
+        theme: ThemeData(
+            useMaterial3: true,
+            textTheme: ThemeData.dark().textTheme.apply(
+                  fontFamily: "Tajawal",
+                )));
   }
 }

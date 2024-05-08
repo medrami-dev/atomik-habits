@@ -1,6 +1,5 @@
 import 'package:Atomic_Habits/crt/continue_reading.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
@@ -59,7 +58,6 @@ class _ReadingPageState extends State<ReadingPage> {
   @override
   Widget build(BuildContext context) {
     double deviceHeight = MediaQuery.of(context).size.height;
-    double deviceWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -67,7 +65,7 @@ class _ReadingPageState extends State<ReadingPage> {
           SizedBox(
             height: deviceHeight * 0.9,
             child: SfPdfViewer.asset(
-              "assets/book/atomic.pdf",
+              "assets/book/atomic_book.pdf",
               controller: _pdfViewerController,
               // Save the current page when the page is changed
               onPageChanged: (PdfPageChangedDetails details) {
@@ -85,10 +83,9 @@ class _ReadingPageState extends State<ReadingPage> {
                 ? AdWidget(ad: _bannerAd!)
                 : Container(
                     alignment: Alignment.center,
-                    child: Text(
+                    child: const Text(
                       "  لا يوجد اعلان متوفر ",
                       textAlign: TextAlign.center,
-                      style: GoogleFonts.tajawal(),
                     ),
                   ),
           )

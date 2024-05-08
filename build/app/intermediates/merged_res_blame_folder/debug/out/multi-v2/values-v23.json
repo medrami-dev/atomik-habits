@@ -4,7 +4,7 @@
             "outputFile": "com.example.atomic_abits_book.app-mergeDebugResources-31:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Mohamed\\.gradle\\caches\\transforms-3\\54d742fd25d8045523bbd52b9ef66eff\\transformed\\appcompat-1.2.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Mohamed\\.gradle\\caches\\transforms-3\\bd6ed2c7e88e84edc3bd4c34e07ffec9\\transformed\\appcompat-1.2.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Mohamed\\.gradle\\caches\\transforms-3\\d032224f4cfb6a6e1071a77e712f1d3b\\transformed\\work-runtime-2.7.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Mohamed\\.gradle\\caches\\transforms-3\\45897dd77d55ea4d2881fa2ffbee4f74\\transformed\\work-runtime-2.7.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

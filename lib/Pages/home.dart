@@ -1,9 +1,7 @@
 // ignore_for_file: unused_element
 
-import 'package:Atomic_Habits/crt/ads_manager.dart';
 import 'package:Atomic_Habits/widgets/image_button.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '../widgets/book_desc.dart';
 import '../widgets/start_reading.dart';
@@ -32,19 +30,13 @@ class _HomeState extends State<Home> {
         throw Exception('Could not launch $url');
       }
     }
-    
-  
 
     return Scaffold(
       // The app bar
       appBar: AppBar(
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "مرحبا بك",
-          style: GoogleFonts.tajawal(
-              color: const Color.fromARGB(255, 74, 74, 74),
-              fontSize: 25,
-              fontWeight: FontWeight.w500),
         ),
         actions: [
           ImageButton(onTap: () async {
@@ -56,27 +48,34 @@ class _HomeState extends State<Home> {
         ],
       ),
       // The body of the app
-      body: Container(
-        margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 30),
-        width: deviceWidth,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            Image.asset(
-              "assets/images/book_img.jpg",
-              scale: 0.75,
-            ),
-            SizedBox(
-              height: deviceHeight * 0.03,
-            ),
-            Expanded(child: ListView(children: const [BookDesc()])),
-            SizedBox(
-              height: deviceHeight * 0.02,
-            ),
-            const StartReadingButton()
-          ],
-        ),
+      body: const Column(
+        children: [
+          BookDesc(),
+          Spacer(),
+          StartReadingButton(),
+        ],
       ),
+      // body: Container(
+      //   margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 30),
+      //   width: deviceWidth,
+      //   child: Column(
+      //     mainAxisAlignment: MainAxisAlignment.end,
+      //     children: [
+      //       Image.asset(
+      //         "assets/images/book_img.jpg",
+      //         scale: 0.8,
+      //       ),
+      //       SizedBox(
+      //         height: deviceHeight * 0.03,
+      //       ),
+      //       Expanded(child: ListView(children: const [BookDesc()])),
+      //       SizedBox(
+      //         height: deviceHeight * 0.02,
+      //       ),
+      //       const StartReadingButton(),
+      //     ],
+      //   ),
+      // ),
     );
   }
 }
