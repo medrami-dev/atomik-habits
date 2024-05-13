@@ -42,7 +42,7 @@ class AboutDev extends StatelessWidget {
             margin: const EdgeInsets.symmetric(horizontal: 10),
             height: 200,
             decoration: BoxDecoration(
-              color: const Color(0xff21ac94),
+              color: const Color.fromARGB(255, 28, 84, 195),
               borderRadius: BorderRadius.circular(5),
             ),
             alignment: Alignment.center,
@@ -57,7 +57,7 @@ class AboutDev extends StatelessWidget {
             margin: const EdgeInsets.symmetric(horizontal: 10),
             height: 200,
             decoration: BoxDecoration(
-              color: const Color(0xff21ac94),
+              color: const Color.fromARGB(255, 203, 151, 29),
               borderRadius: BorderRadius.circular(5),
             ),
             alignment: Alignment.center,
