@@ -40,7 +40,10 @@ class CustomDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: const Text('عن التطبيق'),
+            title: const Text(
+              'حول',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+            ),
             onTap: () {
               Navigator.pushNamed(context, '/aboutApp');
             },

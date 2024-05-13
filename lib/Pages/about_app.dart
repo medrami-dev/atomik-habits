@@ -7,6 +7,7 @@ class AboutApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          centerTitle: true,
           title: const Text(
             'عن التطبيق',
           ),
@@ -16,40 +17,51 @@ class AboutApp extends StatelessWidget {
                 Navigator.pop(context);
               }),
         ),
-        body: const Padding(
-          padding: EdgeInsets.all(10.0),
+        body: Padding(
+          padding: const EdgeInsets.all(10.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              Text(
+              const SizedBox(height: 2),
+              Align(
+                alignment: Alignment.center,
+                child: Image.asset(
+                  'assets/images/reading.png',
+                  width: 200,
+                  height: 200,
+                ),
+              ),
+              const SizedBox(height: 25),
+              const Text(
                 textAlign: TextAlign.end,
-                'التطبيق',
+                'عن التطبيق',
                 style: TextStyle(
-                    fontSize: 23,
+                    fontSize: 22,
                     color: Colors.black,
                     fontWeight: FontWeight.w600),
               ),
-              SizedBox(height: 10),
-              Text(
-                'كتاب العادات الذرية هو تطبيق يساعدك على تتبع عاداتك وتحقيق أهدافك والبقاء متحفزًا.',
+              const SizedBox(height: 10),
+              const Text(
+                '“تطبيق العادات الذرية هو أداة بسيطة تم تصميمها لتقديم تجربة قراءة مريحة لكتاب “العادات الذرية”. يتميز التطبيق بخاصية حفظ موقع القراءة، التي تتيح لك العودة إلى آخر نقطة قراءة بشكل تلقائي، مما يجعل تجربة القراءة أكثر سلاسة. يعمل التطبيق بشكل فعال سواء كان الإنترنت متاحًا أم لا، مما يجعله الخيار المثالي للقراءة في أي وقت وفي أي مكان.',
                 style: TextStyle(fontSize: 16, color: Colors.black),
                 textAlign: TextAlign.end,
               ),
-              SizedBox(height: 10),
-              Text(
+              const SizedBox(height: 10),
+              const Text(
                 textAlign: TextAlign.end,
-                'الخصوصية',
+                'عن الخصوصية',
                 style: TextStyle(
-                    fontSize: 23,
+                    fontSize: 22,
                     color: Colors.black,
                     fontWeight: FontWeight.w600),
               ),
-              SizedBox(height: 10),
-              Text(
-                'نحن نحترم خصوصيتك ونحن لا نقوم بجمع أي معلومات شخصية عنك. يتم استخدام الإعلانات لتمويل التطبيق. جميع بيانات الخاصة باقراءة الكتب تخزن محليًا على جهازك ولا يتم مشاركتها مع أي شخص.',
+              const SizedBox(height: 10),
+              const Text(
+                'نحن نحترم خصوصيتك ونحن لا نقوم بجمع أي معلومات شخصية عنك. جميع بيانات الخاصة باقراءة الكتب تخزن محليًا على جهازك ولا يتم مشاركتها مع أي شخص.',
                 style: TextStyle(fontSize: 16, color: Colors.black),
                 textAlign: TextAlign.end,
               ),
+              const SizedBox(height: 50),
             ],
           ),
         ));

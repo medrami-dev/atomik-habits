@@ -1,5 +1,6 @@
 class AdManager {
-  static const bool isTest = false;
+  static const bool isTest = true;
+
   static String interstitialAdId = isTest
       ? "ca-app-pub-3940256099942544/6300978111"
       : "ca-app-pub-6140426266171792/6032431978";

@@ -1,9 +1,8 @@
 // ignore_for_file: unused_element
-
-import 'package:Atomic_Habits/widgets/custom_drawer.dart';
-import 'package:Atomic_Habits/widgets/image_button.dart';
+import 'package:Atomic_Habits/Pages/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:page_transition/page_transition.dart';
 import '../widgets/book_desc.dart';
 import '../widgets/start_reading.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -32,27 +31,39 @@ class _HomeState extends State<Home> {
     return Scaffold(
       // The app bar
       appBar: AppBar(
-          centerTitle: true,
-          title: const Text(
-            "العادات الذرية",
-          ),
-          actions: [
-            ImageButton(onTap: () async {
-              launchMyUrl();
-            }),
-            const SizedBox(
-              width: 10,
-            )
-          ],
-          leading: Builder(builder: (context) {
-            return IconButton(
-              icon: const Icon(Icons.menu),
+        centerTitle: true,
+        title: const Text(
+          "العادات الذرية",
+        ),
+        actions: [
+          IconButton.filled(
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(
+                  const Color(0xfff1f6f4),
+                ),
+              ),
               onPressed: () {
-                Scaffold.of(context).openDrawer();
+                Navigator.push(
+                    context,
+                    PageTransition(
+                        type: PageTransitionType.rightToLeftWithFade,
+                        duration: const Duration(milliseconds: 400),
+                        child: const CustomDrawerScreen()));
               },
-            );
-          })),
-      drawer: const CustomDrawer(),
+              icon: Directionality(
+                textDirection: TextDirection.rtl,
+                child: Image.asset(
+                  "assets/images/bars-sort.png",
+                  height: 20,
+                  width: 20,
+                ),
+              )),
+          const SizedBox(
+            width: 10,
+          )
+        ],
+      ),
+
       bottomSheet: const SizedBox(height: 65, child: StartReadingButton()),
       body: Column(
         children: [
