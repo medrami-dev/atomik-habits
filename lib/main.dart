@@ -31,6 +31,7 @@ class _MainAppState extends State<MainApp> {
         },
         theme: ThemeData(
             useMaterial3: true,
+            brightness: Brightness.light,
             textTheme: ThemeData.dark().textTheme.apply(
                   fontFamily: "Tajawal",
                 )));

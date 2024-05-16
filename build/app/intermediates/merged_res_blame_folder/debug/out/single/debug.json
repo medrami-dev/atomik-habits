@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.example.atomic_abits_book.app-merged_res-13:/mipmap-xxhdpi_book_img.jpg.flat",
+        "source": "com.example.atomic_abits_book.app-main-7:/mipmap-xxhdpi/book_img.jpg"
+    },
+    {
+        "merged": "com.example.atomic_abits_book.app-merged_res-13:/drawable-v21_launch_background.xml.flat",
+        "source": "com.example.atomic_abits_book.app-main-7:/drawable-v21/launch_background.xml"
+    },
+    {
+        "merged": "com.example.atomic_abits_book.app-merged_res-13:/mipmap-xhdpi_book_img.jpg.flat",
+        "source": "com.example.atomic_abits_book.app-main-7:/mipmap-xhdpi/book_img.jpg"
+    },
+    {
+        "merged": "com.example.atomic_abits_book.app-merged_res-13:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.atomic_abits_book.app-main-7:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.atomic_abits_book.app-merged_res-13:/mipmap-mdpi_book_img.jpg.flat",
+        "source": "com.example.atomic_abits_book.app-main-7:/mipmap-mdpi/book_img.jpg"
+    },
+    {
+        "merged": "com.example.atomic_abits_book.app-merged_res-13:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.atomic_abits_book.app-main-7:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.atomic_abits_book.app-merged_res-13:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.example.atomic_abits_book.app-main-7:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.atomic_abits_book.app-merged_res-13:/drawable_launch_background.xml.flat",
+        "source": "com.example.atomic_abits_book.app-main-7:/drawable/launch_background.xml"
+    },
+    {
+        "merged": "com.example.atomic_abits_book.app-merged_res-13:/mipmap-hdpi_book_img.jpg.flat",
+        "source": "com.example.atomic_abits_book.app-main-7:/mipmap-hdpi/book_img.jpg"
+    },
+    {
+        "merged": "com.example.atomic_abits_book.app-merged_res-13:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.atomic_abits_book.app-main-7:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.atomic_abits_book.app-merged_res-13:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.atomic_abits_book.app-main-7:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.atomic_abits_book.app-merged_res-13:/mipmap-xxxhdpi_book_img.jpg.flat",
+        "source": "com.example.atomic_abits_book.app-main-7:/mipmap-xxxhdpi/book_img.jpg"
+    }
+]
