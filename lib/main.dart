@@ -1,13 +1,11 @@
 import 'package:Atomic_Habits/Pages/about_app.dart';
 import 'package:Atomic_Habits/Pages/splash.dart';
 import 'package:flutter/material.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'Pages/home.dart';
 import 'Pages/reading_page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  MobileAds.instance.initialize();
   runApp(const MainApp());
 }
 

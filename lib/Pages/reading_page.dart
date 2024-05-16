@@ -1,9 +1,6 @@
 import 'package:Atomic_Habits/crt/continue_reading.dart';
 import 'package:flutter/material.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
-
-import '../crt/ads_manager.dart';
 
 class ReadingPage extends StatefulWidget {
   const ReadingPage({super.key});
@@ -13,27 +10,6 @@ class ReadingPage extends StatefulWidget {
 }
 
 class _ReadingPageState extends State<ReadingPage> {
-  BannerAd? _bannerAd;
-  bool isLoaded = false;
-  //* Load the banner ad
-  void loadBannerAd() {
-    _bannerAd = BannerAd(
-      adUnitId: AdManager.bannerAdId,
-      size: AdSize.banner,
-      request: const AdRequest(),
-      listener: BannerAdListener(
-        onAdLoaded: (Ad ad) {
-          setState(() {
-            isLoaded = true;
-          });
-        },
-        onAdFailedToLoad: (Ad ad, LoadAdError error) {
-          ad.dispose();
-        },
-      ),
-    )..load();
-  }
-
   //* Create a PdfViewerController
   final PdfViewerController _pdfViewerController = PdfViewerController();
   ContinueReading continueReading = ContinueReading();
@@ -44,14 +20,12 @@ class _ReadingPageState extends State<ReadingPage> {
     continueReading.loadCurrentPage().then((page) {
       _pdfViewerController.jumpToPage(page);
     });
-    loadBannerAd();
   }
 
   @override
   void dispose() {
     // Save the current page when the widget is disposed
     continueReading.saveCurrentPage(_pdfViewerController.pageNumber);
-    _bannerAd?.dispose();
     super.dispose();
   }
 
@@ -63,7 +37,7 @@ class _ReadingPageState extends State<ReadingPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SizedBox(
-            height: deviceHeight * 0.9,
+            height: deviceHeight * 1,
             child: SfPdfViewer.asset(
               "assets/book/atomic_book.pdf",
               controller: _pdfViewerController,
@@ -75,20 +49,6 @@ class _ReadingPageState extends State<ReadingPage> {
               enableDoubleTapZooming: false,
             ),
           ),
-          Container(
-            alignment: Alignment.center,
-            height: AdSize.banner.height.toDouble(),
-            width: AdSize.banner.width.toDouble(),
-            child: isLoaded
-                ? AdWidget(ad: _bannerAd!)
-                : Container(
-                    alignment: Alignment.center,
-                    child: const Text(
-                      "  لا يوجد اعلان متوفر ",
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-          )
         ],
       ),
     );
