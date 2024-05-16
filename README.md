@@ -1,3 +1,3 @@
-# atomic_abits_book
+# atomic_habits_book
 
-An easy To use App To read The 'Atomic Abits Book'
+An easy To use App To read The 'Atomic Habits Book'

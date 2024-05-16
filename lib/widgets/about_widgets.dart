@@ -21,16 +21,18 @@ class AboutTile extends StatelessWidget {
         alignment: Alignment.center,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 10),
-            Text(
-              textAlign: TextAlign.end,
-              title,
-              style: const TextStyle(
-                  fontSize: 22,
-                  color: Colors.black,
-                  fontWeight: FontWeight.w600),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Text(
+                textAlign: TextAlign.end,
+                title,
+                style: const TextStyle(
+                    fontSize: 22,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w600),
+              ),
             ),
             const SizedBox(height: 10),
             Text(

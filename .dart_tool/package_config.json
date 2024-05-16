@@ -92,8 +92,20 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "flutter_animate",
+      "rootUri": "file:///C:/Users/Mohamed/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_animate-4.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///C:/Users/Mohamed/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-2.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "flutter_shaders",
+      "rootUri": "file:///C:/Users/Mohamed/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_shaders-0.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
@@ -506,7 +518,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-05-11T15:04:49.006677Z",
+  "generated": "2024-05-13T16:24:50.368397Z",
   "generator": "pub",
   "generatorVersion": "3.3.4"
 }
