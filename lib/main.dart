@@ -1,5 +1,6 @@
 import 'package:Atomic_Habits/Pages/about_app.dart';
 import 'package:Atomic_Habits/Pages/splash.dart';
+import 'package:Atomic_Habits/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'Pages/home.dart';
 import 'Pages/reading_page.dart';
@@ -21,7 +22,7 @@ class _MainAppState extends State<MainApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Atomic Habits',
+        title: kAppName,
         routes: {
           "/": (context) => const SplashScreen(),
           "/home": (context) => const Home(),
