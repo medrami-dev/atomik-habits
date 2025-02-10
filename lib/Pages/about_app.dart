@@ -37,15 +37,6 @@ class AboutApp extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                Align(
-                  alignment: Alignment.center,
-                  child: Image.asset(
-                    'assets/images/reading.png',
-                    width: 200,
-                    height: 200,
-                  ),
-                ),
-                const SizedBox(height: 25),
                 Animate(
                   onPlay: (controller) => controller.forward(),
                   effects: const [
@@ -57,13 +48,11 @@ class AboutApp extends StatelessWidget {
                   ],
                   child: const AboutTile(
                       title: 'عن التطبيق',
-                      height: 250,
                       content:
                           '“تطبيق العادات الذرية هو أداة بسيطة تم تصميمها لتقديم تجربة قراءة مريحة لكتاب “العادات الذرية”. يتميز التطبيق بخاصية حفظ موقع القراءة، التي تتيح لك العودة إلى آخر نقطة قراءة بشكل تلقائي، مما يجعل تجربة القراءة أكثر سلاسة. يعمل التطبيق بشكل فعال سواء كان الإنترنت متاحًا أم لا، مما يجعله الخيار المثالي للقراءة في أي وقت وفي أي مكان.'),
                 ),
                 const SizedBox(height: 10),
                 const AboutTile(
-                  height: 150,
                   title: 'عن الخصوصية',
                   content:
                       'نحن نحترم خصوصيتك ونحن لا نقوم بجمع أي معلومات شخصية عنك. جميع بيانات الخاصة باقراءة الكتب تخزن محليًا على جهازك ولا يتم مشاركتها مع أي شخص.',
@@ -74,7 +63,6 @@ class AboutApp extends StatelessWidget {
                     ),
                 const SizedBox(height: 10),
                 const AboutTile(
-                  height: 150,
                   title: 'عن المطور',
                   content:
                       'تم تطوير هذا التطبيق بواسطة محمد رامي مطور تطبيقات محترف ومهتم بتطوير تطبيقات الهواتف . يمكنك التواصل معي عبر البريد الإلكتروني',

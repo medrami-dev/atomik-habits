@@ -16,8 +16,7 @@ class BookDesc extends StatelessWidget {
 كيف نتخلص من نقص الحافز، ونتمتع بقوة الإرادة
 كيف نغير بيئتنا المحيطة لتحقيق نتائج إيجابية في الحياة""",
         textAlign: TextAlign.center,
-        style: TextStyle(
-            color: Color.fromARGB(255, 33, 33, 33), fontSize: 15, height: 1.5),
+        style: TextStyle(color: Colors.black87, fontSize: 16, height: 1.5),
       ),
     );
   }
