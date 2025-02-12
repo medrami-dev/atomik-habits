@@ -13,7 +13,7 @@ class _ReadingPageState extends State<ReadingPage> {
   //* Create a PdfViewerController
   final PdfViewerController _pdfViewerController = PdfViewerController();
   ContinueReading continueReading = ContinueReading();
-  // Load the current page when the widget is initialized
+  //* Load the current page when the widget is initialized
   @override
   void initState() {
     super.initState();
@@ -24,7 +24,7 @@ class _ReadingPageState extends State<ReadingPage> {
 
   @override
   void dispose() {
-    // Save the current page when the widget is disposed
+    //* Save the current page when the widget is disposed
     continueReading.saveCurrentPage(_pdfViewerController.pageNumber);
     super.dispose();
   }
@@ -36,27 +36,17 @@ class _ReadingPageState extends State<ReadingPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Row(
-            children: [
-              IconButton(
-                icon: const Icon(Icons.arrow_back_ios_new),
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-              ),
-            ],
-          ),
           SizedBox(
             height: deviceHeight * 0.88,
             child: SfPdfViewer.asset(
               "assets/book/atomic_book.pdf",
               controller: _pdfViewerController,
-              // Save the current page when the page is changed
+              //* Save the current page when the page is changed
               onPageChanged: (PdfPageChangedDetails details) {
                 continueReading
                     .saveCurrentPage(_pdfViewerController.pageNumber);
               },
-              enableDoubleTapZooming: false,
+              enableDoubleTapZooming: true,
             ),
           ),
         ],

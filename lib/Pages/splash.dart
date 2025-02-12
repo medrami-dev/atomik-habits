@@ -14,11 +14,10 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     navigateAfterSomeTime();
   }
-
+  
   Future navigateAfterSomeTime() async {
     return Future.delayed(const Duration(seconds: 2), () {
-      // checkIfUser();
-      Navigator.pushReplacementNamed(context, '/home');
+      checkIfUser();
     });
   }
 
